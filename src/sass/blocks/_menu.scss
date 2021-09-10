@@ -83,10 +83,10 @@
         &:hover {
             a {
                 text-decoration: underline;
-                color: black;
+                color: $main_hover;
             }
             &:before {
-                background-color: black;
+                background-color: white;
             }
         }
         a {
