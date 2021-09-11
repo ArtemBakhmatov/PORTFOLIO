@@ -1,6 +1,5 @@
 .about {
     padding-top: 120px;
-    padding-bottom: 100px;
     &__wrapper {
         display: grid;
         grid-template-columns: 400px 670px;
@@ -26,7 +25,7 @@
     &__descr {
         padding-top: 6px;
         .divider {
-            margin-top: 0;
+            margin: 0;
         }
     }
     &__text {
