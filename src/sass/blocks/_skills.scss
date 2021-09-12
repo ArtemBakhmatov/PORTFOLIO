@@ -1,0 +1,61 @@
+.skills {
+    padding: 120px 10px;
+    &__title {
+        position: relative;
+        text-align: center;
+        margin-bottom: 0;
+        @include before_circle;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, 270px);
+        grid-auto-rows: 270px;
+        column-gap: 13px;
+        row-gap: 13px;
+    }
+    &__block {
+        position: relative;
+        width: 270px;
+        height: 270px;
+        border: 1px solid #000000;
+        border-radius: 6px;
+        box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.20);
+        background-color: #ececec;
+        padding: 30px;
+        &-img {
+            &_width {
+                width: 65px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        &-title {
+            position: absolute;
+            top: 115px;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000000;
+        }
+        &-descr {
+            position: absolute;
+            top: 150px;
+            right: 30px;
+            left: 30px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000000;
+        }
+    }
+}
