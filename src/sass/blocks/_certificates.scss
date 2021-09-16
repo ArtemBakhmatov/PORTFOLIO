@@ -1,0 +1,39 @@
+.certificates {
+    padding-top: 60px;
+    &__title {
+        position: relative;
+        text-align: center;
+        margin-bottom: 0;
+        @include before_circle;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__wrapper {
+        position: relative;
+        margin: 60px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__img {
+        width: 500px;
+        transition: 0.5s all;
+        &:hover {
+            width: 700px;
+        }
+        img {
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.20);
+            transition: 1s all;
+            &:hover {
+                box-shadow: 0 0 35px rgba(0, 0, 255, 0.50);
+            }
+        }
+    }
+}
