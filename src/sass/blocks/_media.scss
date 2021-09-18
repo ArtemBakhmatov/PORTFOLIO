@@ -7,11 +7,42 @@
     .container {
         max-width: 960px;
     }
+    .about {
+        &__wrapper {
+            grid-template-columns: 400px 507px;
+            column-gap: 50px;
+        }
+        &__skills {
+            column-gap: 20px;
+            grid-template: repeat(2, minmax(115px, auto))/repeat(2, 243px);
+            &-item {
+                grid-template-columns: 40px 192px;
+                column-gap: 10px;
+            }
+        }
+    }
 }
 
 @media (max-width: 992px) {
     .container {
         max-width: 720px;
+    }
+    .about {
+        padding-top: 80px;
+        &__wrapper {
+            grid-template-columns: 300px 377px;
+            column-gap: 40px;
+        }
+        &__subtitle {
+            font-size: 31px;
+        }
+        &__skills {
+            grid-template-columns: 360px;
+            grid-auto-rows: minmax(115px, auto);
+            &-item {
+                grid-template-columns: 40px 307px;
+            }
+        }
     }
 }
 

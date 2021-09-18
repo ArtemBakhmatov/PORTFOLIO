@@ -1151,11 +1151,51 @@
   .container {
     max-width: 960px;
   }
+  .about__wrapper {
+    -ms-grid-columns: 400px 507px;
+        grid-template-columns: 400px 507px;
+    -webkit-column-gap: 50px;
+            column-gap: 50px;
+  }
+  .about__skills {
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+    -ms-grid-rows: (minmax(115px, auto))[2];
+    -ms-grid-columns: (243px)[2];
+        grid-template: repeat(2, minmax(115px, auto))/repeat(2, 243px);
+  }
+  .about__skills-item {
+    -ms-grid-columns: 40px 192px;
+        grid-template-columns: 40px 192px;
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+  }
 }
 
 @media (max-width: 992px) {
   .container {
     max-width: 720px;
+  }
+  .about {
+    padding-top: 80px;
+  }
+  .about__wrapper {
+    -ms-grid-columns: 300px 377px;
+        grid-template-columns: 300px 377px;
+    -webkit-column-gap: 40px;
+            column-gap: 40px;
+  }
+  .about__subtitle {
+    font-size: 31px;
+  }
+  .about__skills {
+    -ms-grid-columns: 360px;
+        grid-template-columns: 360px;
+    grid-auto-rows: minmax(115px, auto);
+  }
+  .about__skills-item {
+    -ms-grid-columns: 40px 307px;
+        grid-template-columns: 40px 307px;
   }
 }
 
