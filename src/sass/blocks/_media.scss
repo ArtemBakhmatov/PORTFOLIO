@@ -78,6 +78,27 @@
             right: 20px;
         }
     }
+    .about {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template-columns: 100%;
+            grid-template-rows: 525px auto auto;
+        }
+        &__photo {
+            grid-row: unset;
+            img {
+                width: 65%;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        &__skills {
+            grid-template-columns: repeat(2, 260px);
+            &-item {
+                grid-template-columns: 40px 206px;
+            }
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -104,6 +125,25 @@
         background: url("../img/main_bg.jpg") 45% 0 /cover no-repeat;
         &__btns {
             margin-top: 30px;
+        }
+    }
+    .about {
+        &__wrapper {
+            grid-template-rows: 405px auto auto;
+        }
+        &__photo {
+            img {
+                width: 269px;
+            }
+        }
+        &__subtitle {
+            font-size: 24px;
+        }
+        &__skills {
+            grid-template-columns: 270px;
+            &-item {
+                grid-template-columns: 40px 217px;
+            }
         }
     }
 }

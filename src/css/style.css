@@ -1220,6 +1220,31 @@
   .promo .hamburger {
     right: 20px;
   }
+  .about {
+    padding-top: 40px;
+  }
+  .about__wrapper {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 525px auto auto;
+        grid-template-rows: 525px auto auto;
+  }
+  .about__photo {
+    grid-row: unset;
+  }
+  .about__photo img {
+    width: 65%;
+    display: block;
+    margin: 0 auto;
+  }
+  .about__skills {
+    -ms-grid-columns: (260px)[2];
+        grid-template-columns: repeat(2, 260px);
+  }
+  .about__skills-item {
+    -ms-grid-columns: 40px 206px;
+        grid-template-columns: 40px 206px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1243,6 +1268,24 @@
   }
   .promo__btns {
     margin-top: 30px;
+  }
+  .about__wrapper {
+    -ms-grid-rows: 405px auto auto;
+        grid-template-rows: 405px auto auto;
+  }
+  .about__photo img {
+    width: 269px;
+  }
+  .about__subtitle {
+    font-size: 24px;
+  }
+  .about__skills {
+    -ms-grid-columns: 270px;
+        grid-template-columns: 270px;
+  }
+  .about__skills-item {
+    -ms-grid-columns: 40px 217px;
+        grid-template-columns: 40px 217px;
   }
 }
 /*# sourceMappingURL=style.css.map */
