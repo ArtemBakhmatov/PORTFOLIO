@@ -21,6 +21,19 @@
             }
         }
     }
+    .resume {
+        padding-top: 100px;
+        &__wrapper {
+            padding: 60px 0 0 0;
+            column-gap: 107px;
+        }
+    }
+    .skills {
+        &__wrapper {
+            grid-template-columns: repeat(3, 270px);
+            justify-content: center;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -42,6 +55,26 @@
             &-item {
                 grid-template-columns: 40px 307px;
             }
+        }
+    }
+    .resume {
+        padding-top: 50px;
+        &__subtitle {
+            font-size: 31px;
+        }
+        &__wrapper {
+            padding: 50px 0 0 0;
+            column-gap: 80px;
+            grid-template-columns: repeat(2, 318px);
+        }
+    }
+    .skills {
+        &__subtitle {
+            font-size: 31px;
+        }
+        &__wrapper {
+            grid-template-columns: repeat(2, 270px);
+            justify-content: center;
         }
     }
 }
@@ -82,7 +115,7 @@
         padding-top: 40px;
         &__wrapper {
             grid-template-columns: 100%;
-            grid-template-rows: 525px auto auto;
+            grid-template-rows: 525px auto 155px;
         }
         &__photo {
             grid-row: unset;
@@ -97,6 +130,28 @@
             &-item {
                 grid-template-columns: 40px 206px;
             }
+        }
+    }
+    .resume {
+        &__wrapper {
+            grid-template-columns: 100%;
+            row-gap: 40px;
+        }
+    }
+    .skills {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        &__wrapper {
+            grid-template-columns: repeat(2, 260px);
+            grid-template-rows: repeat(2, 260px);
+            grid-auto-rows: 260px;
+            column-gap: 13px;
+            row-gap: 13px;
+        }
+        &__block {
+            padding: 20px;
+            width: 260px;
+            height: 260px;
         }
     }
 }
@@ -144,6 +199,36 @@
             &-item {
                 grid-template-columns: 40px 217px;
             }
+        }
+    }
+    .resume {
+        &__subtitle {
+            font-size: 24px;
+        }
+        .divider {
+            margin: 0 auto;
+        }
+        &__wrapper {
+            padding: 40px 0 0 0;
+        }
+    }
+    .skills {
+        &__subtitle {
+            font-size: 24px;
+            line-height: 36px;
+            padding-top: 15px;
+            width: 218px;
+            margin: 0 auto;
+        }
+        .divider {
+            margin: 10px auto 0 auto;
+        }
+        &__wrapper {
+            margin-top: 25px;
+            grid-template-columns: 100%;
+        }
+        &__block {
+            margin: 0 auto;
         }
     }
 }
