@@ -1188,6 +1188,29 @@
   .progress__block {
     width: 300px;
   }
+  .portfolio__wrapper {
+    -ms-grid-columns: (280px)[auto-fit];
+        grid-template-columns: repeat(auto-fit, 280px);
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    grid-auto-rows: 280px;
+    row-gap: 35px;
+  }
+  .portfolio__wrapper .horizonal, .portfolio__wrapper .vertical {
+    grid-column: unset;
+    grid-row: unset;
+    height: 280px;
+    width: 280px;
+  }
+  .portfolio__wrapper .horizonal img, .portfolio__wrapper .vertical img {
+    width: 280px;
+    height: 280px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .certificates__img {
+    width: 450px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1243,6 +1266,21 @@
         justify-content: space-around;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .portfolio {
+    padding: 70px 0 60px 0;
+  }
+  .portfolio__subtitle {
+    font-size: 31px;
+  }
+  .certificates {
+    padding-top: 40px;
+  }
+  .certificates__subtitle {
+    font-size: 31px;
+  }
+  .certificates__img {
+    width: 345px;
   }
 }
 
@@ -1319,6 +1357,31 @@
   .progress__block {
     width: 350px;
   }
+  .portfolio {
+    padding: 45px 0 60px 0;
+  }
+  .portfolio__wrapper {
+    margin-top: 45px;
+  }
+  .certificates {
+    padding-top: 10px;
+  }
+  .certificates__wrapper {
+    margin: 45px 0 0 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .certificates__img {
+    width: 100%;
+    margin-bottom: 45px;
+  }
+  .certificates__img:hover {
+    width: 100%;
+  }
+  .certificates__img img:hover {
+    -webkit-box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+            box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+  }
 }
 
 @media (max-width: 576px) {
@@ -1390,6 +1453,31 @@
   }
   .progress__block {
     width: 100%;
+  }
+  .portfolio {
+    padding: 35px 0 40px 0;
+  }
+  .portfolio__subtitle {
+    font-size: 24px;
+  }
+  .portfolio .divider {
+    margin: 0 auto;
+  }
+  .portfolio__wrapper {
+    margin-top: 40px;
+    row-gap: 20px;
+  }
+  .certificates__subtitle {
+    font-size: 24px;
+  }
+  .certificates .divider {
+    margin: 0 auto;
+  }
+  .certificates__wrapper {
+    margin: 30px 0 0 0;
+  }
+  .certificates__img {
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

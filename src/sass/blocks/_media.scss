@@ -39,6 +39,30 @@
             width: 300px;
         }
     }
+    .portfolio {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 280px);
+            justify-content: space-around;
+            grid-auto-rows: 280px;
+            row-gap: 35px;
+            .horizonal, .vertical {
+                grid-column: unset;
+                grid-row: unset;
+                height: 280px;
+                width: 280px;
+                img {
+                    width: 280px;
+                    height: 280px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    .certificates {
+        &__img {
+            width: 450px;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -86,6 +110,21 @@
         &__wrapper {
             justify-content: space-around;
             flex-wrap: wrap;
+        }
+    }
+    .portfolio {
+        padding: 70px 0 60px 0;
+        &__subtitle {
+            font-size: 31px;
+        }
+    }
+    .certificates {
+        padding-top: 40px;
+        &__subtitle {
+            font-size: 31px;
+        }
+        &__img {
+            width: 345px;
         }
     }
 }
@@ -170,6 +209,31 @@
             width: 350px;
         }
     }
+    .portfolio {
+        padding: 45px 0 60px 0;
+        &__wrapper {
+            margin-top: 45px;
+        }
+    }
+    .certificates {
+        padding-top: 10px;
+        &__wrapper {
+            margin: 45px 0 0 0;
+            flex-wrap: wrap;
+        }
+        &__img {
+            width: 100%;
+            margin-bottom: 45px;
+            &:hover {
+                width: 100%;
+            }
+            img {
+                &:hover {
+                    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.20);
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -250,6 +314,33 @@
     .progress {
         &__block {
             width: 100%;
+        }
+    }
+    .portfolio {
+        padding: 35px 0 40px 0;
+        &__subtitle {
+            font-size: 24px;
+        }
+        .divider {
+            margin: 0 auto;
+        }
+        &__wrapper {
+            margin-top: 40px;
+            row-gap: 20px;
+        }
+    }
+    .certificates {
+        &__subtitle {
+            font-size: 24px;
+        }
+        .divider {
+            margin: 0 auto;
+        }
+        &__wrapper {
+            margin: 30px 0 0 0;
+        }
+        &__img {
+            margin-bottom: 20px;
         }
     }
 }
