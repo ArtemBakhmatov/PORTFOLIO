@@ -34,6 +34,11 @@
             justify-content: center;
         }
     }
+    .progress {
+        &__block {
+            width: 300px;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -75,6 +80,12 @@
         &__wrapper {
             grid-template-columns: repeat(2, 270px);
             justify-content: center;
+        }
+    }
+    .progress {
+        &__wrapper {
+            justify-content: space-around;
+            flex-wrap: wrap;
         }
     }
 }
@@ -154,6 +165,11 @@
             height: 260px;
         }
     }
+    .progress {
+        &__block {
+            width: 350px;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -229,6 +245,11 @@
         }
         &__block {
             margin: 0 auto;
+        }
+    }
+    .progress {
+        &__block {
+            width: 100%;
         }
     }
 }

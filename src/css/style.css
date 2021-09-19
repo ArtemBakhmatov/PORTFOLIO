@@ -1185,6 +1185,9 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .progress__block {
+    width: 300px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1234,6 +1237,12 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .progress__wrapper {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -1307,6 +1316,9 @@
     width: 260px;
     height: 260px;
   }
+  .progress__block {
+    width: 350px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1375,6 +1387,9 @@
   }
   .skills__block {
     margin: 0 auto;
+  }
+  .progress__block {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
