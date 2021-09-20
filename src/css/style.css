@@ -1211,6 +1211,18 @@
   .certificates__img {
     width: 450px;
   }
+  .contacts {
+    padding: 50px 0 70px 0;
+  }
+  .contacts__wrapper {
+    padding: 0;
+    -ms-grid-columns: 350px 560px;
+        grid-template-columns: 350px 560px;
+  }
+  .contacts__form {
+    -ms-grid-columns: (270px)[2];
+        grid-template-columns: repeat(2, 270px);
+  }
 }
 
 @media (max-width: 992px) {
@@ -1281,6 +1293,25 @@
   }
   .certificates__img {
     width: 345px;
+  }
+  .contacts {
+    padding: 30px 0 40px 0;
+  }
+  .contacts__subtitle {
+    font-size: 31px;
+  }
+  .contacts__wrapper {
+    -ms-grid-columns: 250px 420px;
+        grid-template-columns: 250px 420px;
+  }
+  .contacts__form {
+    -ms-grid-columns: (204px)[2];
+        grid-template-columns: repeat(2, 204px);
+    -ms-grid-rows: 34px 166px 45px;
+        grid-template-rows: 34px 166px 45px;
+  }
+  .contacts__btn {
+    font-size: 12px;
   }
 }
 
@@ -1382,6 +1413,23 @@
     -webkit-box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
             box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
   }
+  .contacts {
+    padding: 20px 0 40px 0;
+  }
+  .contacts__wrapper {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .contacts__photo {
+    display: none;
+  }
+  .contacts__form {
+    -ms-grid-columns: (260px)[2];
+        grid-template-columns: repeat(2, 260px);
+  }
+  .contacts__btn {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1478,6 +1526,47 @@
   }
   .certificates__img {
     margin-bottom: 20px;
+  }
+  .contacts {
+    padding: 20px 0 25px 0;
+  }
+  .contacts__subtitle {
+    font-size: 24px;
+  }
+  .contacts__form {
+    margin-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: unset;
+  }
+  .contacts__input {
+    margin-top: 25px;
+    height: 45px;
+  }
+  .contacts__textarea {
+    margin-top: 25px;
+    height: 140px;
+  }
+  .contacts__triggers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 25px;
+  }
+  .contacts__policy {
+    width: 171px;
+  }
+  .contacts__btn {
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
