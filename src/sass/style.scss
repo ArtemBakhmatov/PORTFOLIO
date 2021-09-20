@@ -7,6 +7,10 @@
     padding: 0;
 }
 
+body {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(170,188,203,0.24163168685442926) 50%, rgba(42,115,166,1) 100%);
+}
 .container {
     width: 1140px;
     margin: 0 auto;
