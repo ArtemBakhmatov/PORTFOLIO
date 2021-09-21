@@ -1,0 +1,72 @@
+.progress {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__block {
+        width: 350px;
+    }
+    &__item {
+        margin-bottom: 30px;
+        &-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-left {
+            position: relative;
+            padding-left: 14px;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000000;
+            @include before_circle;
+            &:before {
+                top: -32%;
+            }
+        }
+        &-right {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000000;
+        }
+        &-scale {
+            margin-top: 27px;
+            width: 100%;
+            height: 14px;
+            background-color: #E8E4DE;
+            border-radius: 4px;
+            &_100 {
+                width: 100%;
+                height: 14px;
+                background-color: $main_color;
+                border-radius: 4px;
+            }
+            &_75 {
+                width: 75%;
+                height: 14px;
+                background-color: $main_color;
+                border-radius: 4px;
+            }
+            &_10 {
+                width: 10%;
+                height: 14px;
+                background-color: $main_color;
+                border-radius: 4px;
+            }
+            &_90 {
+                width: 90%;
+                height: 14px;
+                background-color: $main_color;
+                border-radius: 4px;
+            }
+            &_95 {
+                width: 95%;
+                height: 14px;
+                background-color: $main_color;
+                border-radius: 4px;
+            }
+        }
+    }
+}

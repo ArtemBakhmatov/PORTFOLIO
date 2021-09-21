@@ -1,0 +1,132 @@
+.hamburger {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    height: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    cursor: pointer;
+    &:hover {
+        span {
+            background-color: $main_color;
+        }
+    }
+    span {
+        transition: 0.5s all;
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: $main_color_1;
+    }
+    span.long {
+        width: 36px;
+    }
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.6s all;
+    &_active {
+        left: 0;
+        visibility: visible;
+        opacity: 1;
+    }
+    &__block {
+        position: relative;
+        z-index: 10;
+        padding-top: 140px;
+        padding-left: 40px;
+        width: 345px;
+        height: 100%;
+        background-color: $main_color;
+        transition: 0.5s all;
+    }
+    &__close {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+        svg path {
+            transition: 0.5s all;
+        }
+        &:hover {
+            svg path {
+                fill: $main_color_1;
+            }
+        }
+    }
+    &__list {
+        list-style-type: none;
+        padding-left: 35px;
+    }
+    &__link {
+        position: relative;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 15px;
+        &:before {
+            position: absolute;
+            content: '';
+            display: block;
+            left: -35px;
+            top: 10px;
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            border: 1px solid #000000;
+            transition: 0.5s all;
+        }
+        &:hover {
+            a {
+                text-decoration: underline;
+                color: $main_hover;
+            }
+            &:before {
+                background-color: white;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: #FFFFFF;
+            transition: 0.5s all;
+        }
+    }
+    &__social {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            transition: 0.5s all;
+            &:hover {
+                color: $main_color_1;
+            }
+        }
+    }
+    &__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #FFFFFF;
+        opacity: 0.75;
+    }
+}
