@@ -1159,7 +1159,7 @@ body {
 .skills__block-descr {
   position: absolute;
   top: 150px;
-  right: 30px;
+  right: 25px;
   left: 30px;
   font-weight: 500;
   font-size: 12px;
@@ -2028,7 +2028,7 @@ body {
     margin-top: 25px;
   }
   .contacts__policy {
-    width: 171px;
+    width: 177px;
   }
   .contacts__btn {
     margin-top: 20px;
