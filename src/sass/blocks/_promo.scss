@@ -2,16 +2,23 @@
     min-height: 100vh;
     position: relative;
     background: url("../img/main_bg.jpg") 0 0 /cover no-repeat;
-    padding-top: 205px;
+    padding-top: 245px;
+    &__block {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
     &__title {
         margin-top: 10px;
-        width: 535px;
+        width: 600px;
         background: linear-gradient(45deg, #afafaf 33%, #C0C0C0 66%, #ffffff);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         display: table;
     }
     &__subtitle {
+        font-size: 20px;
+        line-height: 24px;
         position: relative;
         padding-left: 10px;
         color: white;

@@ -59,8 +59,16 @@
         }
     }
     .certificates {
+        &__wrapper {
+            flex-wrap: wrap;
+            margin: 50px 0 60px 0;
+        }
         &__img {
+            margin-top: 10px;
             width: 450px;
+            &:hover {
+                width: 800px;
+            }
         }
     }
     .contacts {
@@ -78,6 +86,12 @@
 @media (max-width: 992px) {
     .container {
         max-width: 720px;
+    }
+    .promo {
+        background: url("../img/main_bg.jpg") -100px 0 /cover no-repeat;
+        .title_fz60 {
+            font-size: 50px;
+        }
     }
     .about {
         padding-top: 80px;
@@ -178,10 +192,13 @@
         }
     }
     .promo {
+        background: url("../img/main_bg.jpg") -220px 0 /cover no-repeat;
+        .title_fz60 {
+            font-size: 45px;
+        }
         &__title {
-            line-height: 39px;
-            width: 300px;
-
+            line-height: 45px;
+            width: 500px;
         }
         .hamburger {
             right: 20px;
@@ -298,9 +315,19 @@
         }
     }
     .promo {
-        background: url("../img/main_bg.jpg") 45% 0 /cover no-repeat;
+        background: url("../img/main_bg.jpg") -525px 0 /cover no-repeat;
         &__btns {
             margin-top: 30px;
+        }
+        &__title {
+            line-height: 40px;
+            width: 100%;
+        }
+        .title_fz16 {
+            font-size: 18px;
+        }
+        .title_fz60 {
+            font-size: 40px;
         }
     }
     .about {
